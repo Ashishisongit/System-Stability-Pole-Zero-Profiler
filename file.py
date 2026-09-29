@@ -80,6 +80,12 @@ try:
                 yaxis_title="y(t)",
             )
             st.plotly_chart(fig_step, use_container_width=True)
-
+  st.markdown("---")
+    st.markdown("""
+    <div style='text-align: center; color: #94A3B8; font-size: 0.9rem;'>
+        Department of Information Technology | Vidyavardhini's College of Engineering & Technology<br>
+    Prepared By : Aayush Bhilare, Atharva Bhosale, Devyani Chaudhari, Ashish Chauhan, Pratikshya Das
+    </div>
+    """, unsafe_allow_html=True)
 except Exception as e:
     st.error(f"Error parsing inputs or calculating roots: {e}")
