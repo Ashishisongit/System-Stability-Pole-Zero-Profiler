@@ -11,8 +11,8 @@ st.title("System Stability & Pole-Zero Profiler")
 
 # Sidebar inputs
 st.sidebar.header("Transfer Function Coefficients")
-num_str = st.sidebar.text_input("Numerator Coefficients N(s)", "1")
-den_str = st.sidebar.text_input("Denominator Coefficients D(s)", "1, 3, 2")
+num_str = st.sidebar.text_input("Numerator Coefficients N(s)", "1,2")
+den_str = st.sidebar.text_input("Denominator Coefficients D(s)", "1, 2, 2")
 
 try:
     num = [float(x.strip()) for x in num_str.split(",") if x.strip()]
